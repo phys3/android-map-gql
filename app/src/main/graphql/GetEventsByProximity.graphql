@@ -1,0 +1,10 @@
+query EventsByProximity($latitude: Float!, $longitude: Float!) {
+    getEventsByProximity(latitude: $latitude, longitude: $longitude) {
+        id
+        event_location {
+            latitude
+            longitude
+        }
+        host_user_uid
+    }
+}

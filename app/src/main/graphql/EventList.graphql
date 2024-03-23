@@ -6,5 +6,6 @@ query EventsList {
             longitude
         }
         host_user_uid
+
     }
 }
