@@ -27,7 +27,10 @@ apollo {
 android {
     namespace = "com.damjan.courts"
     compileSdk = 34
-
+    buildFeatures {
+        compose = true
+        buildConfig = true
+    }
     defaultConfig {
         applicationId = "com.damjan.courts"
         minSdk = 24
@@ -40,10 +43,13 @@ android {
             useSupportLibrary = true
         }
     }
-
     buildTypes {
+        debug {
+            buildConfigField("String", "BE_API_URL", "\"https://2ef3-86-33-66-111.ngrok-free.app/graphql\"")
+        }
         release {
             isMinifyEnabled = false
+            buildConfigField("String", "BE_API_URL", "\"https://2ef3-86-33-66-111.ngrok-free.app/graphql\"")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -56,9 +62,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
-    }
-    buildFeatures {
-        compose = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
