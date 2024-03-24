@@ -19,17 +19,17 @@ secrets {
 
 apollo {
     service("service") {
-        packageName.set("com.example")
+        packageName.set("com.damjan")
     }
     generateKotlinModels.set(true)
 }
 
 android {
-    namespace = "com.example.courts"
+    namespace = "com.damjan.courts"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.courts"
+        applicationId = "com.damjan.courts"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

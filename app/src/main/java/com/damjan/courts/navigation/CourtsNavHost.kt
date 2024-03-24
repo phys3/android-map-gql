@@ -1,4 +1,4 @@
-package com.example.courts.navigation
+package com.damjan.courts.navigation
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -12,9 +12,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.courts.ui.add_event.AddEventScreen
-import com.example.courts.ui.find_event.FindEventScreen
-import com.example.courts.ui.home.HomeScreen
+import com.damjan.courts.ui.add_event.AddEventScreen
+import com.damjan.courts.ui.find_event.FindEventScreen
+import com.damjan.courts.ui.home.HomeScreen
 import javax.sql.DataSource
 
 @Composable

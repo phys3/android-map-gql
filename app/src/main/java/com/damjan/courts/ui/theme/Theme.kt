@@ -1,4 +1,4 @@
-package com.example.courts.ui.theme
+package com.damjan.courts.ui.theme
 
 import android.app.Activity
 import android.content.Context
@@ -17,7 +17,7 @@ import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.res.colorResource
 import androidx.core.content.ContextCompat
 import androidx.core.view.WindowCompat
-import com.example.courts.R
+import com.damjan.courts.R
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,

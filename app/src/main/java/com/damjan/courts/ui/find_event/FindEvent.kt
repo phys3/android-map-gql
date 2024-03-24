@@ -1,4 +1,4 @@
-package com.example.courts.ui.find_event
+package com.damjan.courts.ui.find_event
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.indication
@@ -12,7 +12,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.courts.data.EventViewModel
+import com.damjan.courts.data.EventViewModel
 import com.google.android.gms.maps.model.LatLng
 import com.google.maps.android.compose.GoogleMap
 import com.google.maps.android.compose.Marker

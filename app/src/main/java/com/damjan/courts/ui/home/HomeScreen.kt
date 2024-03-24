@@ -1,4 +1,4 @@
-package com.example.courts.ui.home
+package com.damjan.courts.ui.home
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -17,8 +17,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.courts.R
-import com.example.courts.data.EventViewModel
+import com.damjan.courts.R
+import com.damjan.courts.data.EventViewModel
 
 
 @Composable

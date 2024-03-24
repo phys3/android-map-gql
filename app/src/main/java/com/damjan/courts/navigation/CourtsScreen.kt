@@ -1,7 +1,7 @@
-package com.example.courts.navigation
+package com.damjan.courts.navigation
 
 import androidx.annotation.StringRes
-import com.example.courts.R
+import com.damjan.courts.R
 
 enum class NavRoutes(@StringRes val title: Int) {
     Home(title = R.string.home),

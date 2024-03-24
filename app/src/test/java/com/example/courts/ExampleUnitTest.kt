@@ -1,4 +1,4 @@
-package com.example.courts
+package com.damjan.courts
 
 import org.junit.Test
 

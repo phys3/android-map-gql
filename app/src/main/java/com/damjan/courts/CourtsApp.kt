@@ -1,4 +1,4 @@
-package com.example.courts
+package com.damjan.courts
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -23,9 +23,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.courts.data.EventViewModel
-import com.example.courts.navigation.CourtsNavHost
-import com.example.courts.navigation.NavRoutes
+import com.damjan.courts.data.EventViewModel
+import com.damjan.courts.navigation.CourtsNavHost
+import com.damjan.courts.navigation.NavRoutes
 import androidx.lifecycle.viewmodel.compose.viewModel
 
 @OptIn(ExperimentalMaterial3Api::class)

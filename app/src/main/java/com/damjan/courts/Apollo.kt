@@ -1,4 +1,4 @@
-package com.example.courts
+package com.damjan.courts
 
 import com.apollographql.apollo3.ApolloClient
 

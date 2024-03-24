@@ -1,12 +1,12 @@
-package com.example.courts.data
+package com.damjan.courts.data
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.EventsByProximityQuery
-import com.example.EventsListQuery
-import com.example.type.Event
-import com.example.type.EventLocationOutput
+import com.damjan.EventsByProximityQuery
+import com.damjan.EventsListQuery
+import com.damjan.type.Event
+import com.damjan.type.EventLocationOutput
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

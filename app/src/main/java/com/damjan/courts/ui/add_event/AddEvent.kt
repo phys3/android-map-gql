@@ -1,4 +1,4 @@
-package com.example.courts.ui.add_event
+package com.damjan.courts.ui.add_event
 
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
