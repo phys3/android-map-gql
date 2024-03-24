@@ -1,10 +1,15 @@
 package com.example.courts.ui.find_event
 
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.indication
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material.ripple.rememberRipple
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.courts.data.EventViewModel
@@ -20,7 +25,7 @@ fun FindEventScreen(modifier: Modifier) {
     Box(Modifier.fillMaxSize()) {
         GoogleMap(
             modifier = Modifier.matchParentSize(),
-            onMapClick = { viewModel.getClosestEvents(latitude = it.latitude, longitude = it.longitude)},
+             onMapClick = { viewModel.getClosestEvents(latitude = it.latitude, longitude = it.longitude)},
         ) {
             events.forEach { event ->
                 Marker(
