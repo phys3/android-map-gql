@@ -8,12 +8,10 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.courts.data.EventViewModel
-import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
 import com.google.maps.android.compose.GoogleMap
 import com.google.maps.android.compose.Marker
 import com.google.maps.android.compose.MarkerState
-import com.google.maps.android.compose.rememberCameraPositionState
 
 @Composable
 fun FindEventScreen(modifier: Modifier) {
@@ -22,7 +20,7 @@ fun FindEventScreen(modifier: Modifier) {
     Box(Modifier.fillMaxSize()) {
         GoogleMap(
             modifier = Modifier.matchParentSize(),
-            onMapClick = { viewModel.getClosestEvents(latitude = it.latitude, longitude = it.longitude)}
+            onMapClick = { viewModel.getClosestEvents(latitude = it.latitude, longitude = it.longitude)},
         ) {
             events.forEach { event ->
                 Marker(
